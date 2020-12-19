@@ -4,11 +4,7 @@
     </IfModule>
 
     RewriteEngine On
-<IfModule mod_rewrite.c>
-RewriteEngine on
-RewriteCond %{REQUEST_URI} !^public
-RewriteRule ^(.*)$ public/$1 [L]
-</IfModule>
+    DirectoryIndex index.php
    
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
