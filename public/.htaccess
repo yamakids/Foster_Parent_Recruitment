@@ -1,3 +1,4 @@
+Require all granted
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
@@ -19,6 +20,4 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
 </IfModule>
-<IfModule dir_module>
-    DirectoryIndex index.html index.php
-</IfModule>
+
