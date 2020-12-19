@@ -1,10 +1,11 @@
-Require all granted
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
 
     RewriteEngine On
+
+    Require all granted
    
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
