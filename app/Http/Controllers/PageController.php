@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\Wish;
+use App\Models\Wish;
 use Illuminate\Pagination\Paginator;
 
 class PageController extends Controller
