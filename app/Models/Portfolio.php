@@ -10,6 +10,6 @@ class Portfolio extends Model
     use HasFactory;
 
     public function user() {
-     return $this->belongsTo('App\models\User');
+     return $this->belongsTo('App\Models\User');
    }
 }

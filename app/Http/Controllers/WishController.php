@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\Wish;
-use App\models\Subscribe;
-use App\models\Portfolio;
+use App\Models\Wish;
+use App\Models\Subscribe;
+use App\Models\Portfolio;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Validator;
 

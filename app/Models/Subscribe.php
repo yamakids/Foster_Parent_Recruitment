@@ -16,9 +16,9 @@ class Subscribe extends Model
    }
 
     public function wish() {
-     return $this->belongsTo('App\models\Wish');
+     return $this->belongsTo('App\Models\Wish');
    }
    public function user() {
-     return $this->belongsTo('App\models\User');
+     return $this->belongsTo('App\Models\User');
    }
 }

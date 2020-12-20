@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\Wish;
-use App\models\Subscribe;
+use App\Models\Wish;
+use App\Models\Subscribe;
 
 class SubscribeController extends Controller
 {

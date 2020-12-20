@@ -21,10 +21,10 @@ class Wish extends Model
     ];
 
     public function user() {
-     return $this->belongsTo('App\models\User');
+     return $this->belongsTo('App\Models\User');
    }
 
     public function subscribes() {
-      return $this->hasMany('App\models\Subscribe');
+      return $this->hasMany('App\Models\Subscribe');
     }
 }
