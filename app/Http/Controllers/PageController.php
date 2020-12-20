@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace app\App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\models\Wish;
+use App\models\Wish;
 use Illuminate\Pagination\Paginator;
 
 class PageController extends Controller
