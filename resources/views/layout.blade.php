@@ -34,7 +34,7 @@
 
     <a href="{{ url('/login') }}" class="text-sm text-gray-700 underline btn-flat-border">Login</a>
 
-    <a href="{{ url('/login') }}" class="ml-4 text-sm text-gray-700 underline btn-flat-border">Register</a>
+    <a href="{{ url('/register') }}" class="ml-4 text-sm text-gray-700 underline btn-flat-border">Register</a>
 
     @livewire('navi')
 
