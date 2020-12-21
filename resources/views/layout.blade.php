@@ -36,7 +36,9 @@
 
     <a href="{{ url('/register') }}" class="ml-4 text-sm text-gray-700 underline btn-flat-border">Register</a>
 
-    @livewire('navi')
+    @if(auth()->id())
+     @livewire('navi')
+    @endif
 
     <a class="dropdown-item" style="margin-top:50px;" href="/portfolio/{{auth()->id()}}">マイポートフォリオ</a>
 
