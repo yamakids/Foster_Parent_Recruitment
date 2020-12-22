@@ -38,7 +38,7 @@
           @if(isset($subscribes))
           @foreach($subscribes as $subscribe)
               <tr>
-                  <td>{{Form::radio('user_id',$subscribe->user->id)}} <a href='/portfolio/{{ $subscribe->user->id }}'>{{ $subscribe->user->name }}</a></td>
+                  <td>{{Form::radio('user_id',(string)$subscribe->user->id)}} <a href='/portfolio/{{ $subscribe->user->id }}'>{{ $subscribe->user->name }}</a></td>
                   <td>{{ $subscribe->message }}</td>
                   <td>{{ $subscribe->getStatusName($subscribe->status) }}</td>
               </tr>
