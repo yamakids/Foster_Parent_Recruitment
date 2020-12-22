@@ -38,7 +38,7 @@
           @if(isset($subscribes))
           @foreach($subscribes as $subscribe)
               <tr>@php \Debugbar::addMessage($subscribe->user->id); $id=$subscribe->user->id; @endphp
-                  <td><input type="radio" value=$id>  <a href='/portfolio/{{ $subscribe->user->id }}'>{{ $subscribe->user->name }}</a></td>
+                  <td>{{Form::radio('user_id',$subscribe)}}   <a href='/portfolio/{{ $subscribe->user->id }}'>{{ $subscribe->user->name }}</a></td>
                   <td>{{ $subscribe->message }}</td>
                   <td>{{ $subscribe->getStatusName($subscribe->status) }}</td>
               </tr>
