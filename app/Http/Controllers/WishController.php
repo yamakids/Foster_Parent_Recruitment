@@ -8,7 +8,7 @@ use App\Models\Subscribe;
 use App\Models\Portfolio;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Validator;
-use Storage;
+use Illuminate\Support\Facades\Storage;
 
 class WishController extends Controller
 {
