@@ -16,7 +16,7 @@
             <th colspan="2">詳細</th>
         </tr>
         <tr>
-            <img src="{{ Storage::url($wish->file_path) }}"  class="mb-4" max-width="500" max-height="500"/>
+            <img src="{{ $wish->file_path }}"  class="mb-4" max-width="500" max-height="500"/>
         </tr>
         <tr>
             <td colspan="2">{!!$wish->content!!}</td>

@@ -42,11 +42,12 @@ class WishController extends Controller
              return $this->index();
           }
           //アップロードされた画像を保存する
-          $path = $upload_image->store('uploads',"public");
+           $path = Storage::disk('s3')->putFile('uploads_animal',$upload_image, 'public');
           //画像の保存に成功したらDBに記録する
           if($path){
               if ($request->func == 1) {
                //案件登録
+               $path = Storage::disk('s3')->url($path);
               $params = [
                 'user_id' => auth()->id(),
                 'title' => $request->title,
